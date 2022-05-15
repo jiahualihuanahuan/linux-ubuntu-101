@@ -7,7 +7,13 @@ sudo apt install python3 (python3 came preinstall with ubuntu)
 sudo apt install python3-pip
 
 ## install virtual environment
-pip3 install virtualenv
+sudo apt install python3-virtualenv
 
-## create
+## create a virtual environment
+virtualenv pandas
 
+## activate the virtual environment
+source pandas/bin/activate
+
+## deactivate the virtual environment
+deactivate
