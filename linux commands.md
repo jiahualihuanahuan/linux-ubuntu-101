@@ -29,30 +29,28 @@ whoami
 man
 
 ## clear all previous commands in the terminal
-clear
-Ctril+l (shortcut)
+```clear```
+Ctrl+l (shortcut)
 
 ## print current working directory
 pwd
 
 ## change directory
-cd and cd ..
-
-cd Desktop/ (relative directory)
-cd home/james/Documents (absolute directory)
+```cd Desktop/``` (relative directory)
+```cd home/user_name/Documents``` (absolute directory)
 
 go back to one directory up (can be chained)
 ```cd ../../..``` 
-```cd ~``` (go back to home directory)
+
+go back to home directory
+```cd ~```
 ```cd```
 
 ## list directory contents
 ls
 
 ## make directory
-mkdir
-
-mkdir python_scripts
+```mkdir dirName```
 
 ## create an empty file / change file timestamps
 touch
