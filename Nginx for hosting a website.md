@@ -62,4 +62,4 @@ to check fire wall status
 ```sudo ufw status```
 
 ## Reference documentation
-[nginx documentation]:[http://nginx.org/en/docs/]
+[nginx documentation](http://nginx.org/en/docs/)
