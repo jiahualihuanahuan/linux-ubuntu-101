@@ -11,8 +11,9 @@ Changes made in the configuration file will not be applied until the command to 
 ## Remove Nginx but keep config files
 ```sudo apt remove nginx```
 
-## Config files needed to edit
+## Config files need to be edited
 ```/etc/nginx/nginx.config```
+
 ```/etc/nginx/sites-available/default```
 
 ### /etc/nginx/sites-available/default
