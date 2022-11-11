@@ -13,7 +13,8 @@ sudo apt remove nginx
 /etc/nginx/sites-available/default
 
 ### /etc/nginx/sites-available/default
-'''server {
+'''
+server {
     listen              80; (listen for port 80 which is the unsecured http)
     listen              443 ssl; (listen for port 443 which is the secured https)
     server_name         www.example.com;
@@ -23,7 +24,8 @@ sudo apt remove nginx
     ssl_ciphers         HIGH:!aNULL:!MD5;
     ...
     root /var/www/html (path to your website files)
-}'''
+}
+'''
 
 ### /etc/nginx/nginx.conf
 
