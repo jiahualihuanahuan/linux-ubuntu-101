@@ -1,6 +1,9 @@
 # Nginx
 ## Install Nginx on Ubuntu 22.04
 ```sudo apt install nginx```
+## Nginx basic command
+Changes made in the configuration file will not be applied until the command to reload configuration is sent to nginx or it is restarted. To reload configuration, use below command:
+```nginx -s reload``` 
 
 ## Remove Nginx completely (including config files)
 ```sudo apt purge nginx nginx-common```
@@ -28,8 +31,30 @@ server {
 ```
 
 ### /etc/nginx/nginx.conf
-
-
+```
+user  www-data www-data;
+worker_processes  1;
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+events {
+    worker_connections  1024;
+}
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+    log_format  main  \'$remote_addr - $remote_user [$time_local] \"$request\" \'
+                      \'$status $body_bytes_sent \"$http_referer\" \'
+                      \'\"$http_user_agent\" \"$http_x_forwarded_for\"\';
+    access_log  /var/log/nginx/access.log  main;
+    sendfile        on;
+    #tcp_nopush     on;
+    keepalive_timeout  65;
+    gzip  on;
+    gzip_disable \"msie6\";
+  include /etc/nginx/conf.d/*.conf;
+  include /etc/nginx/sites-enabled/*.conf;
+}
+```
 ## Enable fire wall for specific port
-```sudo ufw allow 443 (allow specific port come through fire wall)
-sudo ufw status (check fire wall status)```
+```sudo ufw allow 443``` (allow specific port come through fire wall)
+```sudo ufw status``` (check fire wall status)```
