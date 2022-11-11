@@ -1,7 +1,13 @@
-# update the system
-sudo apt update
+## update the system
+```sudo apt update```
+```sudo apt upgrade```
 
-# install git
+## move directory/file from one location to another location
+```mv /source/location /destination/location```
+
+
+
+## install git
 sudo apt install git-all
 
 # install software on Ubuntu
@@ -16,7 +22,7 @@ sudo apt remove python3-opencv
 
 # basic commands
 
-# who am I
+## who am I
 whoami
 
 ## manual
@@ -34,8 +40,11 @@ cd and cd ..
 
 cd Desktop/ (relative directory)
 cd home/james/Documents (absolute directory)
-cd ../../.. (can be chained)
-cd ~ (go back to home directory)
+
+go back to one directory up (can be chained)
+```cd ../../..``` 
+```cd ~``` (go back to home directory)
+```cd```
 
 ## list directory contents
 ls
