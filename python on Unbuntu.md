@@ -1,5 +1,5 @@
 # Anaconda
-[installation procedure](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+Anaconda [installation procedure](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
 
 # linux-ubuntu-python-101
 
