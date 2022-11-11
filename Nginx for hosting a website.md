@@ -60,3 +60,6 @@ to allow specific port come through fire wall
 ```sudo ufw allow 443```
 to check fire wall status
 ```sudo ufw status```
+
+## Reference documentation
+[nginx documentation]:[http://nginx.org/en/docs/]
