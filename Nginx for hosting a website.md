@@ -56,5 +56,7 @@ http {
 }
 ```
 ## Enable fire wall for specific port
-```sudo ufw allow 443``` (allow specific port come through fire wall)
-```sudo ufw status``` (check fire wall status)```
+to allow specific port come through fire wall
+```sudo ufw allow 443```
+to check fire wall status
+```sudo ufw status```
