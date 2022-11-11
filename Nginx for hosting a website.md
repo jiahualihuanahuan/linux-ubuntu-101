@@ -26,3 +26,8 @@ server {
 }
 
 ### /etc/nginx/nginx.conf
+
+
+## Enable fire wall for specific port
+sudo ufw allow 443 (allow specific port come through fire wall)
+sudo ufw status (check fire wall status)
