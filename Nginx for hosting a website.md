@@ -1,19 +1,19 @@
 # Nginx
 ## Install Nginx on Ubuntu 22.04
-sudo apt install nginx
+```sudo apt install nginx```
 
 ## Remove Nginx completely (including config files)
-sudo apt purge nginx nginx-common
+```sudo apt purge nginx nginx-common```
 
 ## Remove Nginx but keep config files
-sudo apt remove nginx
+```sudo apt remove nginx```
 
 ## Config files needed to edit
-/etc/nginx/nginx.config
-/etc/nginx/sites-available/default
+```/etc/nginx/nginx.config```
+```/etc/nginx/sites-available/default```
 
 ### /etc/nginx/sites-available/default
-'''
+```
 server {
     listen              80; (listen for port 80 which is the unsecured http)
     listen              443 ssl; (listen for port 443 which is the secured https)
@@ -25,11 +25,11 @@ server {
     ...
     root /var/www/html (path to your website files)
 }
-'''
+```
 
 ### /etc/nginx/nginx.conf
 
 
 ## Enable fire wall for specific port
-'''sudo ufw allow 443 (allow specific port come through fire wall)
-sudo ufw status (check fire wall status)'''
+```sudo ufw allow 443 (allow specific port come through fire wall)
+sudo ufw status (check fire wall status)```
