@@ -1,9 +1,25 @@
 # Nginx
 ## Install Nginx on Ubuntu 22.04
 ```sudo apt install nginx```
+
 ## Nginx basic command
-Changes made in the configuration file will not be applied until the command to reload configuration is sent to nginx or it is restarted. To reload configuration, use below command:
+start nginx
+```nginx``` 
+
+stop until all processes are done
+```nginx -s quit``` 
+
+force stop all processess
+```nginx -s stop``` 
+
+update changes to configuration files
 ```nginx -s reload``` 
+
+to view processes details
+```ps axw -o pid, ppid, user, %cpu, vsz, wchan, command | egrep ' (nginx|PID)```
+
+
+
 
 ## Remove Nginx completely (including config files)
 ```sudo apt purge nginx nginx-common```
